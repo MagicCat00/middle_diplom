@@ -15,6 +15,14 @@ h2 span {
 h3 {
   text-transform: uppercase;
 }
+.menu_button {
+  border: none;
+  background: none;
+}
+.service-btn {
+  border: none;
+  background: none;
+}
 .text-normal {
   font-family: "NeoSansCyr-Medium", sans-serif !important;
 }
