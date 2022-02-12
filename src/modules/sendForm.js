@@ -1,6 +1,11 @@
 const sendForm = (idForm) => {
     const form = document.getElementById(idForm)
 
+    let user = {
+        name:'alex',
+        age: 24
+    }
+
     const sendData = (data) => {
         return fetch('https://jsonplaceholder.typicode.com/posts', {
             method: 'POST',
@@ -13,7 +18,7 @@ const sendForm = (idForm) => {
 
         console.log('submit');
 
-        sendData({}).then(data => {
+        sendData(user).then(data => {
             console.log(data);
         })
     })
