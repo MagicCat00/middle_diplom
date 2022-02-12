@@ -23,6 +23,12 @@ h3 {
   border: none;
   background: none;
 }
+.slider_block {
+  display: none;
+}
+.slider_block--active {
+  display: block;
+}
 .text-normal {
   font-family: "NeoSansCyr-Medium", sans-serif !important;
 }
