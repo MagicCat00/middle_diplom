@@ -11,10 +11,8 @@ const sendForm = (idForm) => {
     form.addEventListener('submit', (event) => {
         event.preventDefault()
 
-        console.log('submit');
-
         sendData({}).then(data => {
-            console.log(data);
+           
         })
     })
 }

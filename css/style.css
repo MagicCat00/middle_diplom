@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "NeoSansCyr-Regular", sans-serif;
@@ -1667,9 +1668,23 @@ input.error {
 
 .smooth-scroll {
   position: fixed;
-  right: 25px;
-  bottom: 25px;
+  right: 45px;
+  bottom: 55px;
   transform: rotate(90deg);
+ 
+  height: 45px;
+  width: 45px;
+  scroll-behavior: smooth;
+}
+.scroll-btn {
+  background: none;
+  border: none;
+  scroll-behavior: smooth;
+}
+.scroll-href {
+  width: 45px;
+  height: 45px;
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 576px) {
