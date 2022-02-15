@@ -291,12 +291,13 @@
     						<form name="action-form" class="form-horizontal" id="form1">
     							<div class="form-group" >
     								<div class="col-sm-12">
-    									<input type="text" name="fio" class="form-control required" placeholder="ваше имя">
+    									<input required type="text" name="fio" class="form-control required" placeholder="ваше имя" maxlength="0">
     								</div>
     							</div>
     							<div class="form-group" id="form2">
     								<div class="col-sm-12">
-    									<input type="text" name="phone" class="form-control required" placeholder="ваш телефон" data-mask="+7 (999) 999-99-99">
+    									<input required type="text" name="phone" class="form-control required phone-form tel" placeholder="ваш телефон" data-mask="+7 (999) 999-99-99" id="phone-form">
+										
     								</div>
     							</div>
     							<div class="form-group">
@@ -479,16 +480,16 @@
     						<h3 class="order-form-heading">Оставить заявку</h3>
     						<div class="order-form-subheading">на получение скидки 20%</div>
     						<form name="action-form2" class="form-horizontal" id="form1" required>
-    							<form class="form-group">
+    							<div class="form-group">
     								<div class="col-sm-12">
     									<input required type="text" name="fio" class="form-control required" placeholder="ваше имя">
     								</div>
-    							</form>
-    							<form class="form-group">
+    							</div>
+    							<div class="form-group">
     								<div class="col-sm-12">
     									<input required type="text" name="phone" class="form-control required" placeholder="ваш телефон" data-mask="+7 (999) 999-99-99">
     								</div>
-    							</form>
+    							</div>
     							<div class="form-group">
     								<div class="col-sm-12">
     									<div class="order-form-button">

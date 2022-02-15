@@ -30,7 +30,7 @@ const slider_services = () => {
    }
 
    const startSlide = () => {
-        setInterval(autoSlide, 5000)
+        
    }
 
    const stopSlide = () => {
