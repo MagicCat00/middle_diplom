@@ -18,6 +18,7 @@
 	<meta name="keywords" content="пластиковые, окна, пвх, вставить, века, дом, профиль, поставить, установить, установка, стандартные, цветные, сайт, современные, купить, фирма, цены, дешевые, стоимость, остекление, монтаж">
 	<meta name="description" content="Окна в дом, квартиру или коттедж из пластикового (пвх) или алюминиевого профиля. Стандартные, цветные и с индивидуальным дизайном! Отличные цены и акции!">
 	<script src="dist/main.js" defer></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />  
 </head>
 <body class="okna">
 	<nav class="navbar navbar-default navbar-fixed-top navigation-top" id="navigation-fixed">
@@ -433,19 +434,20 @@
     		</div>
     		<div class="text-center">
 	    		<div class="col-sm-4">
-	    			<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents">
+	    			<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents"  data-fancybox="gallery">
+	    				<img src="images/documents/document4.jpg" class="img-responsive" alt="">
+	    				<div class="document-overlay"></div>
+	    			</a>
+					
+	    		</div>
+	    		<div class="col-sm-4">
+	    			<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents"  data-fancybox="gallery">
 	    				<img src="images/documents/document4.jpg" class="img-responsive" alt="">
 	    				<div class="document-overlay"></div>
 	    			</a>
 	    		</div>
 	    		<div class="col-sm-4">
-	    			<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents">
-	    				<img src="images/documents/document4.jpg" class="img-responsive" alt="">
-	    				<div class="document-overlay"></div>
-	    			</a>
-	    		</div>
-	    		<div class="col-sm-4">
-	    			<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents">
+	    			<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents"  data-fancybox="gallery">
 	    				<img src="images/documents/document4.jpg" class="img-responsive" alt="">
 	    				<div class="document-overlay"></div>
 	    			</a>
@@ -669,9 +671,9 @@
 	<div class="overlay"></div>
 
 	<div class="header-modal header-modal--opened">
-		<div class="fancybox-skin" style="padding: 0px; width: auto; height: auto;">
-			<div class="fancybox-outer">
-				<div class="fancybox-inner" style="overflow: hidden; width: 580px; height: 495px;">
+		<div class="" style="padding: 0px; width: auto; height: auto;">
+			<div class="">
+				<div class="" style="overflow: hidden; width: 580px; height: 495px;">
 					<div id="callback" class="order-call-modal box-modal" style="display: block;">
         <div class="box-modal_title">
             <div class="box-modal_topic text-center text-warning" style="margin-left: 0px;">Заказ звонка</div>
@@ -695,9 +697,9 @@
     </div></div></div><span title="Close" class="header-modal__close">x</span></div></div>
 
 	<div class="services-modal services-modal--opened">
-			<div class="fancybox-skin" style="padding: 0px; width: auto; height: auto;">
-				<div class="fancybox-outer">
-					<div class="fancybox-inner" style="overflow: hidden; width: 580px; height: 495px;">
+			<div class="" style="padding: 0px; width: auto; height: auto;">
+				<div class="">
+					<div class="" style="overflow: hidden; width: 580px; height: 495px;">
 						<div id="application" class="order-call-modal box-modal" style="display: block;">
 			<div class="box-modal_title">
 				<div class="box-modal_topic text-center text-success" style="margin-left: 0px;">Вызов замерщика</div>
@@ -726,6 +728,7 @@
 	<a href="#home" class="scroll-href smooth-scroll">
 		<img src="./images/prev_arrow.png" class="" />
 	</a>
-
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>
