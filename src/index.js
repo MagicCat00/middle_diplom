@@ -9,5 +9,5 @@ timer('22 february 2022')
 modal_menu()
 modal()
 slider_services()
-sendForm('form1')
+sendForm({ formId: 'form1' })
 scroll
