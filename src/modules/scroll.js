@@ -1,4 +1,4 @@
-const scrolls = document.querySelectorAll('a[href*="#"]')
+const scrolls = document.querySelectorAll('a[href*="#home"]')
 
 for (let scroll of scrolls) {
     scroll.addEventListener("click", function(event) {
