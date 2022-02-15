@@ -5,7 +5,7 @@ import slider_services from "./modules/slider_services";
 import sendForm from "./modules/sendForm";
 import scroll from "./modules/scroll";
 
-timer('15 february 2022')
+timer('22 february 2022')
 modal_menu()
 modal()
 slider_services()
