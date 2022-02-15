@@ -1,11 +1,6 @@
 const sendForm = (idForm) => {
     const form = document.getElementById(idForm)
 
-    let user = {
-        name:'alex',
-        age: 24
-    }
-
     const sendData = (data) => {
         return fetch('https://jsonplaceholder.typicode.com/posts', {
             method: 'POST',
@@ -16,10 +11,8 @@ const sendForm = (idForm) => {
     form.addEventListener('submit', (event) => {
         event.preventDefault()
 
-        console.log('submit');
-
-        sendData(user).then(data => {
-            console.log(data);
+        sendData({}).then(data => {
+           
         })
     })
 }
