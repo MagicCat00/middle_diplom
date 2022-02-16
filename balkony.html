@@ -439,20 +439,20 @@
     		</div>
     	</div>
     </div>
-    <div id="order_1" class="order">
+	<div id="order_1" class="order">
     	<div class="container">
     		<div class="col-md-offset-2 col-md-8">
     			<div class="order-inner row">
     				<div class="col-md-6">
     					<h2 class="order-heading">Оставьте заявку <br/>прямо сейчас</h2>
-    					<div class="order-subheading">и <span class="text-normal">получите скидку  20%</span> <br/>на остекление балкона или лоджии</div>
+    					<div class="order-subheading">и <span class="text-normal">получите скидку  20%</span> <br/>на установку окон</div>
     					<div class="countdown" data-days="7">
 							<div class="countdown-text">До конца акции осталось:
 								<div class="count-wrap">
-									<div class="count count_1">Дней:</br> <span>01</span></div>
-									<div class="count count_2">Часов:</br> <span>02</span></div>
-									<div class="count count_3">Минут:</br> <span>03</span></div>
-									<div class="count count_4">Секунд:</br> <span>04</span></div>
+									<div class="count count_1">Дней:</br> <span id="timer-days">00</span></div>
+									<div class="count count_2">Часов:</br> <span id="timer-hours">00</span></div>
+									<div class="count count_3">Минут:</br> <span id="timer-minutes">00</span></div>
+									<div class="count count_4">Секунд:</br> <span id="timer-seconds">00</span></div>
 								</div>
 							</div>
 						</div>
@@ -461,21 +461,22 @@
     					<div class="order-form rf">
     						<h3 class="order-form-heading">Оставить заявку</h3>
     						<div class="order-form-subheading">на получение скидки 20%</div>
-    						<form name="action-form" class="form-horizontal">
-    							<div class="form-group">
+    						<form name="action-form" class="form-horizontal" id="form1">
+    							<div class="form-group" >
     								<div class="col-sm-12">
-    									<input type="text" name="fio" class="form-control required" placeholder="ваше имя">
+    									<input required type="text" name="fio" class="form-control required" placeholder="ваше имя">
     								</div>
     							</div>
-    							<div class="form-group">
+    							<div class="form-group" id="form2">
     								<div class="col-sm-12">
-    									<input type="text" name="phone" class="form-control required" placeholder="ваш телефон" data-mask="+7 (999) 999-99-99">
+    									<input required type="text" name="phone" class="form-control required phone-form tel" placeholder="ваш телефон" data-mask="+7 (999) 999-99-99" id="phone-form">
+										
     								</div>
     							</div>
     							<div class="form-group">
     								<div class="col-sm-12">
     									<div class="order-form-button">
-    									    <input type="hidden" name="page" value="Балконы">
+    									    <input type="hidden" name="page" value="Окна">
     										<button type="submit" class="btn btn-warning btn-block feedback">Получить скидку!</button>
     									</div>
     								</div>
@@ -627,20 +628,20 @@
     		</div>
     	</div>
     </div>
-    <div id="order_2" class="order">
+    <div id="order_1" class="order">
     	<div class="container">
     		<div class="col-md-offset-2 col-md-8">
     			<div class="order-inner row">
     				<div class="col-md-6">
     					<h2 class="order-heading">Оставьте заявку <br/>прямо сейчас</h2>
-    					<div class="order-subheading">и <span class="text-normal">получите скидку 20%</span> <br/>на остекление балкона или лоджии</div>
+    					<div class="order-subheading">и <span class="text-normal">получите скидку  20%</span> <br/>на установку окон</div>
     					<div class="countdown" data-days="7">
 							<div class="countdown-text">До конца акции осталось:
 								<div class="count-wrap">
-									<div class="count count_1">Дней:</br> <span>01</span></div>
-									<div class="count count_2">Часов:</br> <span>02</span></div>
-									<div class="count count_3">Минут:</br> <span>03</span></div>
-									<div class="count count_4">Секунд:</br> <span>04</span></div>
+									<div class="count count_1">Дней:</br> <span id="timer-days">00</span></div>
+									<div class="count count_2">Часов:</br> <span id="timer-hours">00</span></div>
+									<div class="count count_3">Минут:</br> <span id="timer-minutes">00</span></div>
+									<div class="count count_4">Секунд:</br> <span id="timer-seconds">00</span></div>
 								</div>
 							</div>
 						</div>
@@ -649,27 +650,28 @@
     					<div class="order-form rf">
     						<h3 class="order-form-heading">Оставить заявку</h3>
     						<div class="order-form-subheading">на получение скидки 20%</div>
-    						<form name="action-form2" class="form-horizontal">
-    							<div class="form-group">
+    						<form name="action-form" class="form-horizontal" id="form1">
+    							<div class="form-group" >
     								<div class="col-sm-12">
-    									<input type="text" name="fio" class="form-control required" placeholder="ваше имя">
+    									<input required type="text" name="fio" class="form-control required" placeholder="ваше имя">
     								</div>
     							</div>
-    							<div class="form-group">
+    							<div class="form-group" id="form2">
     								<div class="col-sm-12">
-    									<input type="text" name="phone" class="form-control required" placeholder="ваш телефон" data-mask="+7 (999) 999-99-99">
+    									<input required type="text" name="phone" class="form-control required phone-form tel" placeholder="ваш телефон" data-mask="+7 (999) 999-99-99" id="phone-form">
+										
     								</div>
     							</div>
     							<div class="form-group">
     								<div class="col-sm-12">
     									<div class="order-form-button">
-    									    <input type="hidden" name="page" value="Балконы">
-    										<button type="submit" class="btn btn-warning btn-block feedback">Получить скидку</button>
+    									    <input type="hidden" name="page" value="Окна">
+    										<button type="submit" class="btn btn-warning btn-block feedback">Получить скидку!</button>
     									</div>
     								</div>
     							</div>
     							<div class="form-policy">
-    								<span class="help-block">Мы гарантируем 100% конфиденциальность. Ваша информация не будет распространяться.</span>
+    								<span class="help-block">Мы гарантируем 100% онфиденциальность. Ваша информация не будет распространяться.</span>
     							</div>
     						</form>
     					</div>
