@@ -1,6 +1,5 @@
 const slider_services = () => {
-    //slider_content - все слайды
-    //slider_block - слайды по отдельности
+
     //slider_block--active - видно
     //slider_block - скрыто
 
