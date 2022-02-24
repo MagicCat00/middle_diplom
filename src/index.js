@@ -10,4 +10,4 @@ modal_menu()
 modal()
 slider_services()
 sendForm({ formId: 'form1' })
-scroll
+scroll()
