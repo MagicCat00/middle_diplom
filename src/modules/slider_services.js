@@ -17,27 +17,28 @@ const slider_services = () => {
     elems[index].classList.add(strClass)
    }
 
+   //отображение 2 карточек
+    const getToSlide = (sliderBlock) => {
+        const allSlides = document.querySelectorAll(`.${sliderBlock.id}_item`);
+    
+            let slides = []
+            let slide1 = []
+            let slide2 = []
 
-   const autoSlide = () => {
-    prevSlide(slides, currentSlide, 'slider_block--active')
-    currentSlide++
-
-    if (currentSlide >= slides.length) {
-        currentSlide = 0
+            allSlides.forEach(slide => {
+                if (slide.classList.contains('slider_block')) {
+                    slide1.push(slide)
+                } else slide2.push(slide)
+            })
+            slides.push(slide1)
+            slides.push(slide2)
+            return {slides}
     }
 
-    nextSlide(slides, currentSlide, 'slider_block--active')
-   }
-
-   const startSlide = () => {
-        
-   }
-
-   const stopSlide = () => {
-
-   }
+   //переключение по стрелочкам
    sliderBlock.addEventListener('click', (e) => {
        e.preventDefault()
+       getToSlide(sliderBlock);
 
        if (!e.target.closest('.services__arrow')) {
            return
@@ -60,8 +61,6 @@ const slider_services = () => {
 
        nextSlide(slides, currentSlide, 'slider_block--active')
    })
-
-   startSlide()
 }
 
 export default slider_services
