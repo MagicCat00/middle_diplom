@@ -43,7 +43,7 @@ const slider_services = () => {
        if (e.target.matches('#arrow-right')) {
             console.log('arrow-right');
        } else if (e.target.matches('#arrow-left')) {
-        console.log('arrow-left');
+            console.log('arrow-left');
        } 
    })
 
